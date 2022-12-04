@@ -1,0 +1,105 @@
+.contacts
+{
+    display: flex;
+}
+.contacts-information
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+}
+.contacts-information-block
+{
+    margin-right: 10%;
+}
+.contacts-information-block p:first-child
+{
+    color: #637B3C;
+}
+.contacts-text
+{
+    margin-left: 10%;
+}
+.contacts-text p
+{
+    font-size: 20px;
+}
+.contacts-form
+{
+    width: 50%;
+}
+/* .contacts-form span
+{
+    width: 500px;
+    text-align: center;
+} */
+span
+{
+    font-size: 30px;
+}
+.contacts-date
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contacts-date div:first-child
+{
+    margin-right: 25%;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFDF3;
+    margin: 2% 10% 7% 0;
+    /* width: 80%; */
+    padding: 2%;
+}
+input, select, button
+{
+    border-radius: 20px;
+    height: 40px;
+    width: 95%;
+    margin: 2%;
+    color: #637B3C;
+    border: 1px solid #637B3C;
+    text-align: center;
+}
+button
+{
+    background-color: #637B3C;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 50%;
+
+}
+.div-button
+{
+    display: flex;
+    justify-content: center;
+}
+input::-moz-placeholder 
+{ 
+    color: #637B3C; 
+}
+input::-webkit-input-placeholder
+{
+    color: #637B3C;
+}
+form div
+{
+    font-size: 15px;
+    color: #637B3C;
+    width: 100%;
+}
+form img
+{
+    margin-right: 2%;
+    margin-left: 7%;
+}
+form img:first-child
+{
+    margin-top: 2%;
+}

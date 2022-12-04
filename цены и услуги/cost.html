@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены и услуги</title>
+    <link rel="shortcut icon" href="../ikon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="stylecost.css">
+    
+</head>
+<body>
+    <div class="header-const">
+        <div class="contact-text-1">
+            <p>г. Минск, ул. Лермонтова, д.4</p>
+        </div>
+        <div>
+            <img class="logo-name" src="../logo.png">
+        </div>
+        <div class="contact-text-2">
+            <p>+375(29)777-77-77</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-wrap">    
+                <div class="hamb">
+                    <div class="hamb-field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="../главная/main.html">Главная</a></li>
+                    <li><a href="cost.html"><img src="lapka.svg">Цены и услуги</a></li>
+                    <li><a href="../наши врачи/doctor.html">Наши врачи</a></li>
+                    <li><a href="../отзывы/reviews.html">Отзывы</a></li>
+                    <li><a href="../контакты/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="../logo.png">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="popupBurger" id="popupBurger"></div>
+    <!-- цены и услуги -->
+        <h1>Цены и услуги</h1>
+        <div class="cost">
+            <div class="cost-card"> <!-- вакцинация -->
+                <span><img src="лапка.png">Вакцинация</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Вакцинация процедура</p>
+                        <p>от 12 руб</p>
+                    </div>
+                    <div>
+                        <p>Инъекция внутривенная струйная</p>
+                        <p>7 руб</p>
+                    </div>
+                    <div>
+                        <p>Инъекция подкожная, внутримышечная</p>
+                        <p>4,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Взятие и микроскопия мазков, кожного соскоба и пр.</p>
+                        <p>от 17 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- дерматология -->
+                <span><img src="лапка.png">Дерматология</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Первичный прием дерматолога</p>
+                        <p>от 30 руб</p>
+                    </div>
+                    <div>
+                        <p>Извлечение клеща</p>
+                        <p>от 15 руб</p>
+                    </div>
+                    <div>
+                        <p>Вскрытие абсцесса/гематомы</p>
+                        <p>35,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Удаление вросшего когтя</p>
+                        <p>от 20 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- диагностика -->
+                <span><img src="лапка.png">Диагностика</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Постановка внутривенного катетера</p>
+                        <p>11 руб</p>
+                    </div>
+                    <div>
+                        <p>Промывание желудка</p>
+                        <p>43 руб</p>
+                    </div>
+                    <div>
+                        <p>Нахождение в стационаре час</p>
+                        <p>5 руб</p>
+                    </div>
+                    <div>
+                        <p>Отоскопия</p>
+                        <p>8,70 руб</p>
+                    </div>
+                    <div>
+                        <p>Рентгенологическое исследование</p>
+                        <p>14 руб</p>
+                    </div>
+                    <div>
+                        <p>Запись рентгенологического исследования на диск</p>
+                        <p>2,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Чипирование и внесение данных в базу</p>
+                        <p>55 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- кастрация -->
+                <span><img src="лапка.png">Кастрация/стерилизация</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Стерилизация кошки/суки до 5кг (без стоимости обследования)</p>
+                        <p>от 220 руб</p>
+                    </div>
+                    <div>
+                        <p>Стерилизация кошки/суки больше 5кг (без стоимости обследования)</p>
+                        <p>от 260 руб</p>
+                    </div>
+                    <div>
+                        <p>Кастрация кота (без стоимости обследования)</p>
+                        <p>от 150 руб</p>
+                    </div>
+                    <div>
+                        <p>Кастрация кобеля до 10кг</p>
+                        <p>от 240 руб</p>
+                    </div>
+                    <div>
+                        <p>Кастрация кобеля больше 10кг</p>
+                        <p>от 270 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- травматология -->
+                <span><img src="лапка.png">Травматология</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Послеоперационная обработка швов</p>
+                        <p>8,70 руб</p>
+                    </div>
+                    <div>
+                        <p>Снятие швов</p>
+                        <p>15,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Снятие шин, лангет</p>
+                        <p>13 руб</p>
+                    </div>
+                    <div>
+                        <p>Вправление вывиха/перелома</p>
+                        <p>69,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Наложение шины, лангеты</p>
+                        <p>29 руб</p>
+                    </div>
+                    <div>
+                        <p>Извлечение спиц, пластин</p>
+                        <p>от 43 руб</p>
+                    </div>
+                    <div>
+                        <p>Вскрытие абсцесса/гематомы</p>
+                        <p>35,50 руб</p>
+                    </div>
+                    <div>
+                        <p>Извлечение инородного тела из полости рта</p>
+                        <p>от 32 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- хирургия -->
+                <span><img src="лапка.png">Хирургия</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Кесарево сечение неосложненное</p>
+                        <p>от 120 руб</p>
+                    </div>
+                    <div>
+                        <p>Кесарево сечение осложненное</p>
+                        <p>от 175 руб</p>
+                    </div>
+                    <div>
+                        <p>Эвтаназия мелкого животного</p>
+                        <p>32 руб</p>
+                    </div>
+                    <div>
+                        <p>Эвтаназия крупного животного</p>
+                        <p>54 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-card"> <!-- другое -->
+                <span><img src="лапка.png">Другие услуги</span> 
+                <div class="cost-services">
+                    <div>
+                        <p>Первичный прием ратолога</p>
+                        <p>30 руб</p>
+                    </div>
+                    <div>
+                        <p>Первичный прием орнитолога</p>
+                        <p>30 руб</p>
+                    </div>
+                    <div>
+                        <p>Первичный прием герпетолога</p>
+                        <p>30 руб</p>
+                    </div>
+                    <div>
+                        <p>Повторный прием (ратолога, орнитолога, герпетолога)</p>
+                        <p>28 руб</p>
+                    </div>
+                </div>
+                <div class="button" onclick="myFunction()">
+                    <a href="#" id="open_pop_up">Записаться на приём</a>
+                </div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Записаться на приём</p>
+                            <form>
+                                <div>
+                                    <img src="lapka.svg">Ваше имя<br>
+                                    <input type="text" name="name" required="required">
+                                </div>                   
+                                <div>
+                                    <img src="lapka.svg">E-mail<br>
+                                    <input type="email" name="email" required="required">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Телефон<br>
+                                    <input type="tel" name="tel" required="required" placeholder="+375 29 777-77-77" pattern="\+?[0-9\s\-\(\)]+">
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Услуга<br>
+                                    <select name="theme" required="required">
+                                        <option value="">Выбрать услугу</option>
+                                        <option value="1">Вакцинация</option>
+                                        <option value="2">Дерматология</option>
+                                        <option value="3">Диагностика</option>
+                                        <option value="4">Кастрация/стерилизация</option>
+                                        <option value="5">Травматология</option>
+                                        <option value="6">Хирургия</option>
+                                        <option value="7">Другие услуги</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <img src="lapka.svg">Дата<br>
+                                    <input type="datetime-local" name="date" required="required">
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit" name="submit_btn" value="main_button">Записаться</button>
+                                </div>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="footer-cervices">
+            <div class="footer-cervises-1">
+                <div class="cervices">
+                <h2>Услуги</h2>
+                    <table>
+                <tr>
+                    <td>
+                        <img class="ikon-footer" src="ikon 2.svg">
+                        <p class="text-footer">Вакцинация</p>
+                    </td>
+                    <td>
+                        <img class="ikon-footer" src="ikon 7.svg">
+                        <p class="text-footer">Травматология</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ikon-footer" src="ikon 3.svg">
+                        <p class="text-footer">Дерматология</p>
+                    </td>
+                    <td>
+                        <img class="ikon-footer" src="ikon 6.svg">
+                        <p class="text-footer">Хирургия</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ikon-footer" src="ikon 4.svg">
+                        <p class="text-footer">Диагностика</p>
+                    </td>
+                    <td>
+                        <img class="ikon-footer" src="ikon 1.svg">
+                        <p class="text-footer">Другие услуги</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ikon-footer" src="ikon 5.svg">
+                        <p class="text-footer">Кастрация/стерилизация</p>
+                    </td>
+                </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2>Контактная информация</h2>
+                    <div class="contact-footer">
+                        <p class="text-footer-1">+375(29)777-77-77</p>
+                        <p class="text-footer-1">aibolit@gmail.com</p>
+                    </div>
+                </div>
+                <div class="time-footer">
+                    <h2>Время работы</h2>
+                    <p class="text-footer-1">пн-пт: 9:00-17:00</p>
+                </div>
+            </div>
+            <div class="footer-cervises-2">
+                <div class="adress-footer">
+                    <h2>Адрес</h2>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/26018/dzerzhinsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Дзержинск</a><a href="https://yandex.by/maps/26018/dzerzhinsk/house/Zk4YdwVgS0cPQFtpfXp5c35rZg==/?ll=27.120229%2C53.682282&utm_medium=mapframe&utm_source=maps&z=16.5" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Лермонтова, 4 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCU6aUa5kD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <p class="text-footer-1">г. Минск, ул. Лермонтова, д.4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="../burger.js"></script>
+</body>
+</html>

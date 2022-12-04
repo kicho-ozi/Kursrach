@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID1") format(svg)}
+@font-face { font-family:"Comfortaa";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+.str2 {stroke-width:40.5;stroke-miterlimit:22.9256}
+.str0 {stroke:#2B2A29;stroke-width:100;stroke-miterlimit:22.9256}
+.str1 {stroke:#2B2A29;stroke-width:100;stroke-miterlimit:22.9256}
+.str3 {stroke:#1F1B20;stroke-width:100;stroke-miterlimit:22.9256}
+.fil0 {fill:#EBECEC}
+.fil1 {fill:#2B2A29}
+.fil4 {fill:#C9B79C}
+.fil2 {fill:#DA667B}
+.fil3 {fill:#F1E0C5}
+.fnt1 {font-weight:normal;font-size:740.83px;font-family:'Arial'}
+.fnt0 {font-weight:normal;font-size:2469.44px;font-family:'Comfortaa'}

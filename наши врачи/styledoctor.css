@@ -1,0 +1,38 @@
+.doctor
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.doctor-card
+{
+    width: 90%;
+    background-image: url(pattern.png);
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.doctor-card img
+{
+    width: 30%;
+}
+.doctor-card span
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+.profession
+{
+    font-size: 20px;
+}
+.doctor-text
+{
+    font-size: 25px;
+}
+.doctor-name
+{
+    background-color: white;
+    margin-left: 2%;
+    padding: 2%;
+}
